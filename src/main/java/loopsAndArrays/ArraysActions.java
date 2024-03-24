@@ -70,7 +70,6 @@ public class ArraysActions
     }
     public static void printTheArray(int[] array)
     {
-        //test
         for (int i = 0; i < array.length; i++)
             System.out.printf("Current index is : %d. Value is: %d\n", i, array[i]);
     }
