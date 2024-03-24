@@ -111,15 +111,15 @@ public class ArraysActions
    }
    public static void printNumberN(int number)
    {
-        int N = number * 1;
-        for (int i = 1; i <= N; i++)
+        int n = number * 1;
+        for (int i = 1; i <= n; i++)
         {
-            if (i < N)
+            if (i < n)
             {
                 System.out.printf("%d, ", i);
 
             }
-            if (i == N) {
+            if (i == n) {
                 System.out.printf("%d ", i);
             }
         }
@@ -127,7 +127,7 @@ public class ArraysActions
         System.out.println(" ");
 
         int counter = 1;
-        while (counter <= N)
+        while (counter <= n)
         {
             System.out.printf("%d ", counter);
             counter++;
