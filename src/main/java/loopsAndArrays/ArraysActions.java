@@ -9,7 +9,8 @@ public class ArraysActions
     {
 
         System.out.println("task 1:");
-        int[] myArray = new int[20];
+
+        int[] myArray = initialiseArray(5);
         double[] myArray2 = new double[10];
         printTheArray(myArray);
 
@@ -58,13 +59,19 @@ public class ArraysActions
     }
 
     }
+    public static int[] initialiseArray(int x)
+    {
+        int[] myArray = new int[20];
+        for (int i = 0; i < myArray.length; i++)
+        {
+            myArray[i] = i * x;
+        }
+        return  myArray;
+    }
     public static void printTheArray(int[] array)
     {
         for (int i = 0; i < array.length; i++)
-            {
-                int value = i * 5;
-                System.out.printf("Current index is : %d. Value is: %d\n", i, value);
-            }
+            System.out.printf("Current index is : %d. Value is: %d\n", i, array[i]);
     }
 
     public static void averageNumber(double[] array)
